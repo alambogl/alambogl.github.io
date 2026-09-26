@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List</title>
+    <style>
+        /* Realtime Colors Variables */
+        :root {
+            --text: #ffffff;
+            --background: #1200b8;
+            --primary: #00f2ff;
+            --secondary: #0099ff;
+            --accent: #a100ff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header & Nav Structure with Accent Gradient */
+        header {
+            text-align: center;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+            background: linear-gradient(180deg, var(--accent) 0%, var(--background) 100%);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+            color: var(--text);
+        }
+
+        nav {
+            border: 2px solid var(--text);
+            padding: 0.6rem 1.2rem;
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+            background-color: rgba(18, 0, 184, 0.4);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.2rem;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* Main Content Area */
+        main {
+            flex: 1;
+            width: 90%;
+            max-width: 900px;
+            margin: 2.5rem auto;
+            text-align: center;
+        }
+
+        .intro h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--text);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            margin-bottom: 0.5rem;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            color: var(--text);
+            opacity: 0.85;
+            margin-bottom: 3rem;
+        }
+
+        .item-container h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--text);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            margin-bottom: 1.2rem;
+        }
+
+        /* Wireframe Grid Layout */
+        .content-grid {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .media-box, 
+        .description-box {
+            border: 2px solid var(--text);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 280px;
+            padding: 1.5rem;
+        }
+
+        .media-box {
+            flex: 1;
+            color: var(--text);
+            font-size: 1.25rem;
+        }
+
+        .description-box {
+            flex: 1.6;
+            color: var(--text);
+            font-size: 1.15rem;
+            line-height: 1.5;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: auto;
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        footer a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--primary);
+        }
+
+        /* Responsive Viewports */
+        @media (max-width: 768px) {
+            nav {
+                justify-content: center;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.8rem;
+            }
+
+            .content-grid {
+                flex-direction: column;
+            }
+
+            .media-box, 
+            .description-box {
+                min-height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Bucket List</h1>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Activity</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Personal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro">
+            <h2>About</h2>
+            <p>This page will go into detail about me personally and why I created this site</p>
+        </div>
+
+        <section class="item-container">
+            <h3>About me </h3>
+            <div class="content-grid">
+                <div class="media-box">
+                    <img src="Personal Photo.png" alt="Personal photo">                
+                </div>
+                <div class="description-box">
+                    <p>I was born in summer of 2002 in Mesa Arizona. I was born to a Mexican Mother and a Domincan/Italian Father. Some of my hobbies include comic books, movies, superheros, videogames, and almost anything nerdy. I decided to make this site to finally write out my bucket list and hold me accountable to completing them. It will give me the opportunity to research the things I've always wanted to do and find out more about it and share it with you all.   </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright | <a href="mailto:abramlamboglia@gmail.com">Email</a> | <a href="#">LinkedIn</a></p>
+    </footer>
+
+</body>
+</html>
