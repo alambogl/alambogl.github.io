@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List - Activity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Bucket List</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="activity.html" class="active">Activity</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="personal.html">Personal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro" style="margin-bottom: 3rem;">
+            <h2>Activity Bucket List</h2>   
+        </div>
+
+        <!-- Activity 1: Skydiving -->
+        <section class="item-container" style="margin-bottom: 3rem;">
+            <h3>Skydiving</h3>
+            <div class="content-grid">
+                <div class="media-box">
+                    <img src="skydiving.jpeg" alt="Tandem skydiving in the sky">
+                </div>
+                <div class="description-box">
+                    <div>
+                        <p><strong>Description:</strong> Tandem skydiving involves jumping out of an aircraft at 10,000 to 14,000 feet while harnessed to a certified instructor, experiencing up to 60 seconds of adrenaline-pumping freefall followed by a scenic parachute descent.</p>
+                    </div>
+                    <div>
+                        <p><strong>Why It Interests Me:</strong> Growing up my dad has told me stories about skydiving and how thrilling it must be to experience the freefall and the adrenaline rush, making it a dream activity for me.</p>
+                    </div>
+                    <div>
+                        <p><strong>Average Cost:</strong> $200 – $300 for a tandem jump ($300 – $400+ if adding photo/video packages).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activity 2: Bungee Jumping -->
+        <section class="item-container" style="margin-bottom: 3rem;">
+            <h3>Bungee Jumping</h3>
+            <div class="content-grid">
+                <div class="media-box">
+                    <img src="bungeejumping.webp" alt="Bungee jumping off a platform over the ocean">
+                </div>
+                <div class="description-box">
+                    <div>
+                        <p><strong>Description:</strong> Free-falling from a massive structure like a bridge, crane, or cliff while attached to a large elastic cord, experiencing a thrill of acceleration followed by dramatic bounces above the ground or water below.</p>
+                    </div>
+                    <div>
+                        <p><strong>Why It Interests Me:</strong> Similar to skydiving, bungee jumping offers an exhilarating freefall experience and a rush of adrenaline, making it an exciting activity for thrill-seekers like me.</p>
+                    </div>
+                    <div>
+                        <p><strong>Average Cost:</strong> $100 – $250 per jump (varies by location and height).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activity 3: San Diego Comic-Con -->
+        <section class="item-container" style="margin-bottom: 3rem;">
+            <h3>San Diego Comic-Con</h3>
+            <div class="content-grid">
+                <div class="media-box">
+                    <img src="comic con.svg" alt="San Diego Comic-Con International logo">
+                </div>
+                <div class="description-box">
+                    <div>
+                        <p><strong>Description:</strong> The ultimate pop-culture convention held annually at the San Diego Convention Center, bringing together comic book creators, movie stars, video game developers, exclusive panels, collectibles, and incredible cosplay.</p>
+                    </div>
+                    <div>
+                        <p><strong>Why It Interests Me:</strong> I'm a huge nerd when it comes to comic books and superheros and have been to a few local conventions  so being able to go to the biggest and most prestigious comic-con event in the world is incredibly exciting for me.</p>
+                    </div>
+                    <div>
+                        <p><strong>Average Cost:</strong> $1,200 – $2,500+ total (includes ~$300–$350 for 4-day badges, plus travel, hotel, food, and merch).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Survey Section -->
+        <section class="survey-section">
+            <h3>Share Your Thoughts</h3>
+            <form class="survey-form" action="https://formsubmit.co/alambogl@asu.edu" method="POST">
+                <!-- Custom FormSubmit Subject Line -->
+                <input type="hidden" name="_subject" value="New Activity Survey Submission!">
+
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required> 
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required> 
+                </div>
+
+                <div class="form-group">
+                    <label>Have you completed any of the activities on this list?</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="completed" value="yes" required> Yes
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="completed" value="no"> No
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="opinions">Opinions about the site or activities:</label>
+                    <textarea id="opinions" name="opinions" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Survey</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright | <a href="mailto:alambogl@asu.edu">Email</a> | <a href="#">LinkedIn</a></p>
+    </footer>
+
+</body>
+</html>

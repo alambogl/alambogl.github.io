@@ -22,16 +22,18 @@ body {
     min-height: 100vh;
 }
 
-/* Header & Nav Structure */
+/* Header & Nav Structure with Accent Gradient */
 header {
     text-align: center;
     padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    background: linear-gradient(180deg, var(--accent) 0%, var(--background) 100%);
 }
 
 header h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
     color: var(--text);
 }
 
@@ -43,6 +45,7 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
+    background-color: rgba(18, 0, 184, 0.4);
 }
 
 nav ul {
@@ -58,7 +61,8 @@ nav a {
     font-size: 0.95rem;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
     color: var(--primary);
 }
 
@@ -91,9 +95,58 @@ main {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--text);
-    text-decoration: underline;
-    text-underline-offset: 4px;
     margin-bottom: 1.2rem;
+}
+/* Table Layout Styling */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto; /* Allows horizontal scrolling on small screens */
+}
+
+.location-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid var(--text);
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.location-table th, 
+.location-table td {
+    border: 1px solid var(--text);
+    padding: 1rem;
+    vertical-align: top;
+}
+
+.location-table th {
+    background-color: var(--accent);
+    color: var(--text);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.location-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.location-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.media-cell {
+    min-width: 160px;
+    text-align: center;
+}
+
+.media-cell img,
+.media-cell video {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 4px;
 }
 
 /* Wireframe Grid Layout */
@@ -107,8 +160,9 @@ main {
     border: 2px solid var(--text);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
     min-height: 280px;
     padding: 1.5rem;
 }
@@ -119,11 +173,110 @@ main {
     font-size: 1.25rem;
 }
 
+.media-box img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .description-box {
     flex: 1.6;
     color: var(--text);
     font-size: 1.15rem;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes top, middle, and bottom content apart */
+    text-align: left;
+    min-height: 280px;
+    padding: 1.5rem;
+}
+
+/* Survey Form Section */
+.survey-section {
+    border: 2px solid var(--text);
+    margin-top: 3rem;
+    padding: 2rem;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.survey-section h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.survey-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    padding: 0.6rem;
+    border: 2px solid var(--text);
+    background-color: var(--background);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.radio-group {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: var(--secondary);
+    color: var(--text);
+    border: 2px solid var(--text);
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--primary);
+    color: #000;
 }
 
 /* Footer Styling */
@@ -144,7 +297,7 @@ footer a:hover {
     color: var(--primary);
 }
 
-/* Mobile Responsiveness */
+/* Responsive Viewports */
 @media (max-width: 768px) {
     nav {
         justify-content: center;

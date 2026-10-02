@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List - Personal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Bucket List</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="activity.html">Activity</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="personal.html" class="active">Personal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro">
+            <h2>Personal Goals</h2>
+            <p>ADD CONTENT HERE</p>
+        </div>
+
+        <section class="item-container">
+            <h3>ADD CONTENT HERE</h3>
+            <div class="content-grid">
+                <div class="media-box">
+                    <p>ADD CONTENT HERE (IMAGE)</p>
+                </div>
+                <div class="description-box">
+                    <p>ADD CONTENT HERE</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Survey Section -->
+        <section class="survey-section">
+            <h3>Share Your Thoughts</h3>
+            <form class="survey-form" action="https://formsubmit.co/alambogl@asu.edu" method="POST">
+                <!-- Custom FormSubmit Subject Line -->
+                <input type="hidden" name="_subject" value="New Personal Goals Survey Submission!">
+
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="ADD CONTENT HERE" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="ADD CONTENT HERE" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Have you achieved any similar personal goals?</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="completed" value="yes" required> Yes
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="completed" value="no"> No
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="opinions">Opinions about the site or goals:</label>
+                    <textarea id="opinions" name="opinions" rows="4" placeholder="ADD CONTENT HERE"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Survey</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright | <a href="mailto:alambogl@asu.edu">Email</a> | <a href="#">LinkedIn</a></p>
+    </footer>
+
+</body>
+</html>

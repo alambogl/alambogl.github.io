@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List - Location</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Bucket List</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="activity.html">Activity</a></li>
+                <li><a href="location.html" class="active">Location</a></li>
+                <li><a href="personal.html">Personal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro" style="margin-bottom: 3rem;">
+            <h2>Location Bucket List</h2>   
+        </div>
+
+        <!-- Location Table Section -->
+        <section class="table-container" style="margin-bottom: 3rem;">
+            <div class="table-wrapper">
+                <table class="location-table">
+                    <thead>
+                        <tr>
+                            <th>Location</th>
+                            <th>Media</th>
+                            <th>Description</th>
+                            <th>Sites to See</th>
+                            <th>Reason for Including</th>
+                            <th>Average Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Japan -->
+                        <tr>
+                            <td class="location-name">Japan</td>
+                            <td class="media-cell">
+                                <!-- Replace with image or video embed, e.g., <img src="japan.jpg" alt="Japan"> -->
+                                <p>ADD CONTENT HERE (PHOTO/VIDEO)</p>
+                            </td>
+                            <td>An island nation in East Asia blending rich ancient traditions, historic temples, and futuristic neon-lit metropolis cities.</td>
+                            <td>Mount Fuji, Tokyo Shibuya Crossing, Kyoto Shrines, Osaka Dotonbori</td>
+                            <td>I know japan is the token place for nerds to visit but aside from that the culture and history have always fascinated me.</td>
+                            <td>$2,500 – $4,500 total (10–14 days incl. flights, accommodation, JR pass, and food)</td>
+                        </tr>
+
+                        <!-- Italy -->
+                        <tr>
+                            <td class="location-name">Italy</td>
+                            <td class="media-cell">
+                                <!-- Replace with image or video embed, e.g., <img src="italy.jpg" alt="Italy"> -->
+                                <p>ADD CONTENT HERE (PHOTO/VIDEO)</p>
+                            </td>
+                            <td>A Southern European country known for its Mediterranean coastline, iconic historic architecture, world-renowned cuisine, and artistic heritage.</td>
+                            <td>Colosseum in Rome, Venice Canals, Florence Duomo, Amalfi Coast</td>
+                            <td>I'm part italian but have no direct connection to that part of my family and have always been curious about exploring its rich history and culture and possibly connecting with that side of my family.
+                            <td>$2,200 – $4,000 total (10–12 days incl. flights, trains, lodging, and food)</td>
+                        </tr>
+
+                        <!-- China -->
+                        <tr>
+                            <td class="location-name">China</td>
+                            <td class="media-cell">
+                                <!-- Replace with image or video embed, e.g., <img src="china.jpg" alt="China"> -->
+                                <p>ADD CONTENT HERE (PHOTO/VIDEO)</p>
+                            </td>
+                            <td>A vast East Asian country with a recorded history spanning thousands of years, featuring dramatic natural landscapes and sprawling modern cities.</td>
+                            <td>Great Wall of China, Forbidden City in Beijing, Terracotta Army in Xi'an, Guilin Karst Mountains</td>
+                            <td>Aside from its vast culture and history, China's modern cities and technological advancements also have intrested me and I am eager to experience the blend of tradition and modernity firsthand.</td>
+                            <td>$2,000 – $3,800 total (10–14 days incl. flights, visa fees, tours, and lodging)</td>
+                        </tr>
+
+                        <!-- Egypt -->
+                        <tr>
+                            <td class="location-name">Egypt</td>
+                            <td class="media-cell">
+                                <!-- Replace with image or video embed, e.g., <img src="egypt.jpg" alt="Egypt"> -->
+                                <p>ADD CONTENT HERE (PHOTO/VIDEO)</p>
+                            </td>
+                            <td>A transcontinental country spanning the northeast corner of Africa, famous for ancient civilization landmarks along the fertile Nile River Valley.</td>
+                            <td>Great Pyramids of Giza, Sphinx, Karnak Temple in Luxor, Nile River Cruise</td>
+                            <td>Ever since I was a kid and learned about the ancient world in egypt it's always stuck with me as a place i want to visit and explore its history and culture.
+                            <td>$1,800 – $3,200 total (7–10 days incl. flights, guided tour packages, and lodging)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Survey Section -->
+        <section class="survey-section">
+            <h3>Share Your Thoughts</h3>
+            <form class="survey-form" action="https://formsubmit.co/alambogl@asu.edu" method="POST">
+                <!-- Custom FormSubmit Subject Line -->
+                <input type="hidden" name="_subject" value="New Location Survey Submission!">
+
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required> 
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required> 
+                </div>
+
+                <div class="form-group">
+                    <label>Have you visited any of the locations on this list?</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="completed" value="yes" required> Yes
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="completed" value="no"> No
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="opinions">Opinions about the site or locations:</label>
+                    <textarea id="opinions" name="opinions" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Survey</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright | <a href="mailto:alambogl@asu.edu">Email</a> | <a href="#">LinkedIn</a></p>
+    </footer>
+
+</body>
+</html>
