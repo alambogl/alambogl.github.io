@@ -12,15 +12,6 @@
     margin: 0;
     padding: 0;
 }
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BRTGH0LW6L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BRTGH0LW6L');
-</script>
 
 body {
     background-color: var(--background);
